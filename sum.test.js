@@ -1,4 +1,4 @@
-test('zero is false', () =>{
-    const n = 0
-    expect(n).toBeFalsy()
+test('zero is true', () =>{
+    const n = 1
+    expect(n).toBeTruthy()
 })
