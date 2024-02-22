@@ -1,5 +1,4 @@
-test('object', () => {
-    const data = { one: 1}
-    data['two'] =2
-    expect(data).toEqual({one: 1, two:2})
+test('null is false', () =>{
+    const n = null
+    expect(n).toBeFalsy()
 })
