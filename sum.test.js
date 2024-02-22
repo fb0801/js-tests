@@ -1,4 +1,7 @@
-test('zero is true', () =>{
-    const n = 1
-    expect(n).toBeTruthy()
+const myFunction = require('./sum')
+
+test('throw on input', () => {
+    expect(() => {
+        myFunction(1)
+    }).toThrow()
 })
