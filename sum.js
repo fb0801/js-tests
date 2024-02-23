@@ -1,7 +1,7 @@
-function fectchData(callback) {
-    setTimeout(() => {
-        callback('peanut butter')
-    },1000)
+function fetchPromise() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve('peanut butter'), 1000)
+    })
 }
 
-module.exports = fectchData
+module.exports = fetchPromise
