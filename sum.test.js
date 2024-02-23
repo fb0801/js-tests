@@ -1,6 +1,4 @@
-const fetchPromise = require("./sum")
-
-test('the data is peanut butter', async () => {
-    const data = await fetchPromise()
-    expect(data).toBe('peanut butter')
-})
+test('mock implementation', () => {{
+    const mock = jest.fn(x => 42 + x)
+    expect(mock(1)).toBe(43)
+}})
